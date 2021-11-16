@@ -1,0 +1,94 @@
+.wsu-logo-generator__logo-collection:not(.is-ready){
+    .wsu-logo-generator__logo{
+        display: none;
+    }
+
+    &:after{
+        content: 'Loading...';
+    }
+}
+
+.wsu-logo-generator__logo-collection {
+    margin-bottom: 3rem;
+}
+
+
+/** logo collection header */
+.wsu-logo-generator__logo-collection-header{
+    background: #e6e6e6;
+    display: flex;
+    padding: 1.125rem;
+    margin-bottom: 2.25rem;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.wsu-logo-generator__logo-collection-title{
+    margin: 0;
+    padding: (0.6875rem / 2)  0;
+    font-size: 1.25rem;
+}
+
+
+/** logo collection header controls */
+.wsu-logo-generator__controls {
+}
+
+.wsu-logo-generator__control-output-label {
+    font-weight: bold;
+    font-size: .875rem;
+    margin-right: 1rem;
+}
+
+.wsu-logo-generator__control-output-width {
+    width: 3.75rem;
+    text-align: center;
+    padding: .25rem !important;
+    border: none;
+}
+
+.wsu-logo-generator__output-height {
+
+}
+
+.wsu-logo-generator__output-height-spacer{
+    margin: 0 0.5rem;
+}
+
+
+/** logo  */
+.wsu-logo-generator__logo{
+    margin-bottom: 2.25rem;
+}
+
+h3.wsu-logo-generator__logo-label {
+    font-size: 1rem;
+}
+
+.wsu-logo-generator__logo-outer-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.25rem;
+    flex-flow: row wrap;
+
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+
+.wsu-logo-generator__logo-container{
+    flex-grow: 1;
+    min-width: 250px;
+    margin-right: 3.125rem;
+    margin-bottom: 0.6875em;
+}
+
+.wsu-logo-generator__download-btn-container{
+    display: flex;
+    align-items: center;
+}
+
+.wsu-logo-generator__download-btn {
+    margin: 0;
+}
