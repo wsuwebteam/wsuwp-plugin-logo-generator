@@ -9,7 +9,7 @@ class BlockLogo {
 		$auth_key = get_post_meta( $post->ID, 'wsuwp_logo_auth_key', true );
 		$auth_key_param = isset( $_GET['auth_key'] ) ? esc_html( $_GET['auth_key'] ) : '';
 
-		$attributes['is_valid'] = ( isset( $auth_key, $auth_key_param ) && $auth_key_param === $auth_key ) ? true : false;
+		$attributes['is_valid'] = ( current_user_can( 'publish_posts', $post->ID ) || ( isset( $auth_key, $auth_key_param ) && $auth_key_param === $auth_key ) ) ? true : false;
 		$attributes['author'] = get_user_by( 'ID', $post->post_author );
 
 		ob_start();

@@ -1,6 +1,6 @@
 {
     "name": "wsuwp-plugin-logo-generator",
-    "version": "0.0.1",
+    "version": "0.0.1.4",
     "description": "Adds a Gutenberg block for generatoring WSU Logos",
     "main": "index.js",
     "scripts": {
