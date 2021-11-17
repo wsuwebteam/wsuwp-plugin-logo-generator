@@ -38,7 +38,9 @@ const campusOptions = [
 ];
 
 export default function Edit({ className, clientId, attributes, setAttributes, ...props }) {
-    const blockProps = useBlockProps();
+    const blockProps = useBlockProps( {
+        className: 'wsu-logo-generator__content',
+    } );
 
     // store clientId for a unique idenifier
     useEffect(() => {
@@ -62,7 +64,7 @@ export default function Edit({ className, clientId, attributes, setAttributes, .
         <>
             <InspectorControls>
                 <PanelBody
-                    title="Directory Filters"
+                    title="Logo Settings"
                     initialOpen={true}
                 >
                     <PanelRow>
@@ -98,7 +100,7 @@ export default function Edit({ className, clientId, attributes, setAttributes, .
                 </PanelBody>
             </InspectorControls>
 
-            <div { ...blockProps }>
+            <div {...blockProps}>
                 <Canvas
                     attributes={attributes}
                     setAttributes={setAttributes}
@@ -108,7 +110,7 @@ export default function Edit({ className, clientId, attributes, setAttributes, .
                     textColor="#5F6062"
                 />
 
-                <div style={{ marginTop: '3rem' }}>
+                <div className="wsu-logo-generator__instructions">
                     <h2>Instructions</h2>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce urna felis, dignissim sit amet turpis nec, ornare cursus nisi. Maecenas rhoncus consequat ultrices. Fusce nisi lacus, vehicula eu efficitur ut, blandit vel eros. Cras vel urna ex. Nam sit amet ullamcorper ante. Fusce quis dui eget mi finibus feugiat vel lacinia lorem. Proin elementum lorem sed malesuada tristique.

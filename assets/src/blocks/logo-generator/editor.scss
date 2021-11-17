@@ -1,3 +1,4 @@
+// inspector controls
 .editor-styles-wrapper .edit-post-visual-editor__post-title-wrapper{
     margin-top: 100px;
 }
@@ -8,4 +9,21 @@
 
 .wsu-logo-generator__select-control {
     margin-bottom: 16px;
+}
+
+.is-inspector-for-wsuwp\/logo-generator ~ .wsu-gutenberg-spacing {
+    display: none;
+}
+
+
+
+// editor
+.wp-block.wsu-logo-generator__content {
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.wsu-logo-generator__instructions
+{
+    margin-top: 3rem;
 }
