@@ -3,7 +3,7 @@
  * Plugin Name: WSUWP Logo Generator
  * Plugin URI: https://github.com/wsuwebteam/wsuwp-plugin-logo-generator
  * Description: Adds a Gutenberg block for generatoring WSU Logos
- * Version: 0.0.1
+ * Version: 0.0.1.3
  * Requires PHP: 7.0
  * Author: Washington State University, Dan White
  * Author URI: https://web.wsu.edu/
